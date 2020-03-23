@@ -15,7 +15,7 @@ COPY ./ /conteco/repo/
 ##### END image/Dockerfile/conteco #####
 
 ##### BEGIN image/Dockerfile/build-instructions #####
-ENV CONTECO_ENTRYPOINT "/usr/bin/docker/run"
+ENV CONTECO_ENTRYPOINT "/etc/confluent/docker/run"
 # config omitted for the moment
 # COPY ./conteco/ksql_server/base/* /etc/ksql/
 ##### END image/Dockerfile/build-instructions #####
